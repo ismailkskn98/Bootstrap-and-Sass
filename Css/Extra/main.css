@@ -1,0 +1,604 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, a {
+  font-size: 0.9rem;
+  letter-spacing: 1.1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1.1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  transition: 0.6s;
+  z-index: 100000;
+}
+header li {
+  list-style: none;
+}
+header li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  font-size: 0.9rem;
+}
+header .logo img {
+  transition: 0.6s;
+  max-width: 50%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+header .logo img:hover {
+  transform: translateY(-5px);
+}
+
+header.sticky {
+  background-color: #222222;
+}
+header.sticky .logo img {
+  transition: 0.6s;
+  max-width: 35%;
+}
+header.sticky li a {
+  font-size: 0.8rem;
+}
+
+.navbar {
+  background: #222222;
+}
+
+.nav-item a {
+  color: #222222;
+  transition: all 0.5s ease-in-out;
+}
+.nav-item a:hover {
+  background-color: #018BD3;
+}
+
+.slider {
+  background-image: url(/images/slider5.jpg);
+  background-repeat: center center;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+}
+.slider .sliderRenk {
+  background-color: rgba(34, 34, 34, 0.6);
+  height: 800px;
+}
+
+.randevu-icerik {
+  background-color: #222222;
+}
+.randevu-icerik .randevu {
+  padding: 1.5rem;
+}
+.randevu-icerik .randevu .form-grup {
+  padding: 0.5rem 0;
+}
+.randevu-icerik .randevu .form-grup .form-wrap {
+  padding: 0.3rem;
+  border: 0;
+  border-bottom: 1px solid rgba(211, 209, 209, 0.459);
+  transition: all 0.5s ease-in-out;
+  width: 85%;
+}
+.randevu-icerik .randevu .form-grup .form-wrap:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu-icerik .randevu .form-grup .form-wrap:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu-icerik .randevu .form-grup .form-wrap input, .randevu-icerik .randevu .form-grup .form-wrap textarea {
+  background-color: #222222;
+  resize: none;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
+  width: 100%;
+}
+.randevu-icerik .randevu .form-grup .form-wrap input:focus, .randevu-icerik .randevu .form-grup .form-wrap textarea:focus {
+  outline: none;
+}
+
+.randevu {
+  padding: 1.5rem;
+}
+.randevu .form-grup {
+  padding: 0.5rem 0;
+}
+.randevu .form-grup .form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  border: 0;
+  border-bottom: 1px solid rgba(211, 209, 209, 0.459);
+  transition: all 0.5s ease-in-out;
+  width: 85%;
+}
+.randevu .form-grup .form-wrap:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu .form-grup .form-wrap:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu .form-grup .form-wrap input, .randevu .form-grup .form-wrap textarea {
+  resize: none;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
+  width: 100%;
+}
+.randevu .form-grup .form-wrap input:focus, .randevu .form-grup .form-wrap textarea:focus {
+  outline: none;
+}
+
+.randevu-icerik {
+  box-shadow: 0px 0px 20px black;
+}
+.randevu-icerik .randevuBtn .button {
+  background-color: #222222;
+  color: white;
+  margin-top: 1rem;
+  border: 0;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #222222;
+  border-radius: 2%;
+}
+.randevu-icerik .randevuBtn .button:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 2%;
+  color: white;
+}
+
+.aciklama .aciklama-resim img {
+  max-width: 70%;
+  height: auto;
+}
+.aciklama .aciklama-icerik hr {
+  border: none;
+  border-left: 1px solid black;
+  height: 5.5rem;
+  width: 1px;
+}
+
+section .container .row .on-icerik-icon {
+  width: 5rem;
+  max-height: 4rem;
+  padding: 3rem 3rem;
+  border: 2px solid rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+}
+section .container .row .on-icerik-icon .on-icerik-hover {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  width: 5rem;
+  max-height: 4rem;
+  padding: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .row .on-icerik-icon .on-icerik-hover:hover {
+  opacity: 1;
+}
+section .container .row .on-icerik-icon:hover {
+  background-color: #018BD3;
+  border: 2px solid #018BD3;
+}
+section .container .row .on-icerik-icon:hover .ilk-once {
+  opacity: 0;
+}
+section .container .row .on-icerik-yazi h3 {
+  padding-bottom: 0.75rem;
+}
+section .container .row .on-icerik-yazi .cizgi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .container .row .on-icerik-yazi .cizgi hr {
+  color: #018BD3;
+  width: 10rem;
+}
+
+.basliklar h2 {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+}
+.basliklar p {
+  color: #939393;
+  padding-top: 1rem;
+}
+.basliklar .baslik-cizgi {
+  margin-top: 3rem;
+  background-color: #018BD3;
+  width: 40px;
+  height: 3px;
+}
+
+.ikinci-icerik .resim img {
+  max-width: 100%;
+  height: auto;
+}
+.ikinci-icerik .baslik {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+.ikinci-icerik .baslik img {
+  width: 25%;
+  padding-right: 0.75rem;
+  height: auto;
+}
+
+#hakkimizda {
+  background-image: url(/images/hakkımda.jpg);
+  background-repeat: center center;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+#hakkimizda .hakkimdaRenk {
+  background-color: rgba(34, 34, 34, 0.9);
+  height: auto;
+}
+#hakkimizda h6 {
+  font-weight: 600;
+  text-align: center;
+}
+#hakkimizda p {
+  color: white;
+  line-height: 250%;
+}
+
+#hizmetlerimiz p {
+  line-height: 200%;
+  letter-spacing: 2px;
+  color: rgb(85, 85, 85);
+}
+#hizmetlerimiz .webTasarim {
+  height: 35rem;
+  background-color: #f3f3f3;
+  border-bottom-right-radius: 300px;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu {
+  height: 100%;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim {
+  margin-top: -4.5rem;
+  margin-left: -1rem;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim2 {
+  margin-bottom: -5rem;
+  margin-left: -1.5rem;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimicerik {
+  margin-top: 4rem;
+  margin-right: -1.5rem;
+}
+
+#iletisim .iletisimForm {
+  color: #5d5d5d;
+  font-size: 15px;
+}
+#iletisim .iletisimForm p {
+  margin-bottom: 3rem;
+}
+#iletisim .iletisimForm .form-grup {
+  padding-bottom: 1.5rem;
+}
+#iletisim .iletisimForm .form-grup .form-wrap {
+  margin: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+}
+#iletisim .iletisimForm .form-grup .form-wrap:hover {
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+#iletisim .iletisimForm .form-grup .form-wrap:focus {
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+#iletisim .iletisimForm .form-grup .form-wrap input {
+  padding: 0.5rem;
+  width: 100%;
+}
+#iletisim .iletisimForm .form-grup .form-wrap input:focus {
+  outline: none;
+}
+#iletisim .iletisimForm .form-grup .form-wrap textarea {
+  width: 100%;
+}
+#iletisim .iletisimForm .form-grup .form-wrap textarea:focus {
+  outline: none;
+}
+#iletisim .iletisimForm .btn-wrap {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+#iletisim .iletisimForm .btn-wrap .button {
+  width: 15%;
+  height: 2.5rem;
+  background-color: #018BD3;
+  border: none;
+  color: white;
+  border-radius: 2%;
+  transition: all 0.3s ease-in-out;
+}
+#iletisim .iletisimForm .btn-wrap .button:hover {
+  background-color: #0069a1;
+}
+#iletisim .iletisimBilgileri {
+  box-shadow: 0px 0px 20px black;
+  background: #222222;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 1%;
+}
+#iletisim .iletisimBilgileri h5 {
+  font-size: 1.1rem;
+  color: #018BD3;
+}
+#iletisim .iletisimBilgileri p {
+  color: white;
+}
+#iletisim .iletisimBilgileri i {
+  padding-right: 0.5rem;
+}
+#iletisim .iletisimBilgileri .baslik .baslik-cizgi {
+  background-color: #ffffff;
+  width: 40px;
+  height: 1px;
+  margin-top: 1.9rem;
+}
+
+footer {
+  background-color: #222222;
+}
+footer .container-fluid {
+  border-top: 2px solid #018BD3;
+  padding-top: 1.7rem;
+}
+footer .container-fluid h4 {
+  padding-bottom: 0.75rem;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items, footer .container-fluid .footer-digital .ulasim-items {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #bcc4c9;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items a, footer .container-fluid .footer-digital .hizmet-hakkinda-items p, footer .container-fluid .footer-digital .ulasim-items a, footer .container-fluid .footer-digital .ulasim-items p {
+  color: #bcc4c9;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items {
+  transition: all 0.4s ease-in-out;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items:hover {
+  color: #018BD3;
+  transform: translate(1rem);
+  -webkit-transform: translate(1rem);
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items a:hover {
+  color: #018BD3;
+}
+footer .container-fluid .ulasim .ulasim-items {
+  margin-top: -1rem;
+}
+footer .container-fluid .ulasim .ulasim-items p {
+  font-size: 0.8rem;
+}
+footer .container-fluid .ulasim .footer-icons {
+  color: #bcc4c9;
+  font-size: 0.8rem;
+}
+footer .sosyal li {
+  transition: all 0.4s ease-in-out;
+}
+footer .sosyal li:hover {
+  transform: translate(1rem);
+  -webkit-transform: translate(1rem);
+}
+footer .sosyal li a {
+  color: #bcc4c9;
+  font-size: 0.9rem;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  width: 100%;
+}
+footer .sosyal .insta a:hover {
+  color: #E42148;
+}
+footer .sosyal .twitt a:hover {
+  color: #00acee;
+}
+footer .sosyal .face a:hover {
+  color: #4062aa;
+}
+
+.footer-haklar {
+  background-color: #222222;
+}
+.footer-haklar a {
+  font-size: 0.8rem;
+  color: #6c747a;
+  transition: all 0.2s ease-in-out;
+}
+.footer-haklar a:hover {
+  color: #bcc4c9;
+}
+
+#yukari {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #0077b8;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 35px;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#yukari i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#yukari:hover {
+  background-color: #222222;
+}
+
+.harita {
+  background: -webkit-linear-gradient(left bottom, #222222, #222222, #222222, #003b5a, #222222);
+}
+.harita h2 {
+  color: white;
+}
+.harita .breadcrumb li {
+  color: rgb(156, 143, 143);
+}
+.harita .breadcrumb li + li::before {
+  content: "/ ";
+  padding-right: 0.5rem;
+}
+.harita .breadcrumb a {
+  color: white;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+.harita .hakkinda-cizgi {
+  background-color: #222222;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  bottom: -3.5rem;
+  right: 0;
+  transition: all 0.4s;
+}
+.harita .hakkinda-cizgi:hover {
+  background-color: #003b5a;
+}
+.harita .hakkinda-cizgi .harf {
+  left: 1.5rem;
+  top: 1.2rem;
+  color: white;
+}
+.harita .hakkinda-cizgi .harf h1 {
+  font-size: 4rem;
+  font-family: "BhuTuka Expanded One", cursive;
+}
+
+.hakkında .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.hakkında .sidebar ul .sidebar-items li {
+  border-bottom: 2px dashed rgb(156, 143, 143);
+  padding: 0;
+  margin: 0;
+}
+.hakkında .sidebar ul .sidebar-items a {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+}
+.hakkında .sidebar ul .sidebar-items a:hover {
+  color: #018BD3;
+}
+.hakkında .hakkinda-resim img {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+.hakkında .hakkinda-icerik h3 {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .randevu-icerik {
+    margin-top: 2rem;
+  }
+  .slider {
+    margin-bottom: 8rem;
+  }
+  .aciklama {
+    margin-top: 25rem;
+    margin-bottom: 1rem;
+  }
+  .aciklama .aciklama-resim img {
+    width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .aciklama .aciklama-resim img {
+    width: 50%;
+  }
+  .ikinci-icerik {
+    border: 0;
+  }
+  .ikinci-icerik .baslik {
+    justify-content: center;
+  }
+  .ikinci-icerik .ikinci-icerik-items {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  #hakkimizda .mobilHakkimizda {
+    margin-top: -2rem;
+  }
+  #hakkimizda .mobilHakkimizda p {
+    line-height: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  #hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimicerik {
+    left: 0;
+  }
+}
+@media (max-width: 991px) {
+  #hizmetlerimiz .webTasarim {
+    border-bottom-right-radius: 0px;
+  }
+}
+@media (max-width: 768px) {
+  #hizmetlerimiz .webTasarim {
+    text-align: center;
+    height: 45rem;
+  }
+}/*# sourceMappingURL=main.css.map */

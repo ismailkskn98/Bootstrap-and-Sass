@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="./Css/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./Css/Extra/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Meto Yazılım</title>
+</head>
+<body id="page-body">
+    <!-- Menu header -->
+    <header class="fixed-top d-none d-lg-block p-2 d-flex  justify-content-between align-items-center" id="anasayfa">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center logo ">
+                    <a href="#page-body"><img src="./images/logosonhali.png" alt="logo"></a>
+                </div>
+                <div class="col-md-8 d-flex justify-content-end align-items-center">
+                    <ul class="d-flex align-items-center">
+                        <li><a href="#servisler">Servisler</a></li>
+                        <li><a href="#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobil Menu Header -->
+    <nav class="navbar navbar-expand-lg d-lg-none navbar-dark fixed-top">
+        <div class="container">
+            <div class="logo"><a href="#page-body"><img src="./images/logosonhali.png" alt="logo" width="150" height="auto"></a></div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-label="menüyü açma kapama butonu" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="myLabel">Menü</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>                   
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 text-uppercase ms-auto py-lg-2 ">
+                        <li class="nav-item"><a href="#servisler" class="nav-link">Servisler</a></li>
+                        <li class="nav-item"><a href="#hakkimizda" class="nav-link">Hakkımızda</a></li>
+                        <li class="nav-item"><a href="#hizmetlerimiz" class="nav-link">Hizmetlerimiz</a></li>
+                        <li class="nav-item"><a href="#iletisim" class="nav-link">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hızlı randevu -->
+        <div class="container-fluid d-flex flex-column p-0 position-relative justify-content-lg-center slider">
+        <div class="container-fluid sliderRenk d-flex flex-column p-0 position-relative justify-content-lg-center">
+            <div class="container align-self-center position-absolute top-50">
+                <div class="row">
+                    <div class="col-lg-8 text-light">
+                        <h1 style="font-size:3rem;">GENÇ BEYİNLER</h1>
+                        <h4>Modern ve responsive tasarımlar için doğru yerdesiniz..</h4>
+                        <h5>Kişiye ve kurumlara özel özgün, yenilikçi ve kullanıcı dostu web siteleri üretiyoruz.</h5>
+                    </div>
+                    <div class="col-lg-4 text-white d-flex flex-column p-0 d-none d-md-block">
+                        <div class="randevu-icerik">
+                            <div class="randevu">
+                                <div class="baslik">
+                                    <h4>Sizi arayalım</h4>
+                                    <p>Sizin için araştırmalarımızı en hızlı şekilde yapıp size dönüş sağlayalım</p>
+                                </div>
+                                <form action="#" method="post">
+                                    <label class="form-grup d-flex align-items-center">
+                                        <i class="bi bi-person-fill"></i>
+                                        <span class="form-wrap">
+                                            <input type="text" class="border-0" name="adSoyad" maxlength="25" minlength="3" required="" placeholder="Adınız Soyadınız">
+                                        </span>
+                                    </label>
+                                    <label class="form-grup d-flex align-items-center">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <span class="form-wrap">
+                                            <input type="email" class="border-0" name="email" maxlength="25" required="" placeholder="E-Mail Adresiniz">
+                                        </span>
+                                    </label>
+                                    <label class="form-grup d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <span class="form-wrap">
+                                            <input type="tel" class="border-0" name="tel" maxlength="10" minlength="10" pattern="\d*" required="" placeholder="Telefon Numaranız">
+                                        </span>
+                                    </label>
+                                    <label class="form-grup d-flex">
+                                        <i class="bi bi-chat-right-fill pt-2"></i>
+                                        <span class="form-wrap">
+                                            <textarea name="mesaj" class="border-0" id="mesaj"rows="5" required="" minlength="30" maxlength="150" placeholder="Mesajınız"></textarea>
+                                        </span>
+                                    </label>
+                                    <span class="randevuBtn d-flex justify-content-end align-self-center">
+                                        <input type="submit" name="gonder" value="Gönder" class="button">
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div>  
+        </div>
+
+        <!-- Ön bilgi -->
+        <section>
+            <div class="container aciklama">
+                <div class="row">
+                    <div class="col-lg-8 d-flex align-items-center pt-5">
+                        <div class="row">
+                            <div class="aciklama-resim col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                                <img style="border-radius: 100%;" src="./images/aciklama.jpg" alt="web tasarım">
+                            </div>
+                            <div class="ps-4 aciklama-icerik d-flex align-self-center col-lg-8 text-center text-lg-start mt-3">
+                                <div class="cizgi pe-3 d-none d-lg-block"><hr></div>
+                                <div class="web-aciklama">
+                                    <h2>Neler yapıyoruz ?</h2>
+                                    <p>Modern, işlevsel, mobil uyumlu, özgün, kullanıcı dostu, ekonomik, yenilikçi, profesyonel, stratejik, yükek geri dönüş ve başarı odaklı web tasarım projeleri üretiyoruz.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section içerik 1 -->
+        <section id="servisler" class="basliklar">
+            <div class="container mt-lg-5 pb-5 pt-lg-5 text-center">
+                <div class="col-md-12 pt-5 mt-4 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center align-items-center"><h2>Servisler</h2> 
+                    <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
+                </div>
+                <div class="col-md-12">
+                    <p>Meto Yazılım müşterilerine daha hizmet verebilmek için her geçen gün hizmet yelpazesini genişletmektedir.</p>
+                </div>
+                <div class="row mt-5 pt-2">
+                    <div class="col-md-3 web d-flex flex-column align-items-center">                       
+                        <div class="on-icerik-icon position-relative"><img class="ilk-once" src="./images/kullanıcı-dostu.png" width="70">
+                        <div class="on-icerik-hover position-absolute"><img src="./images/kullanıcı-dostu-hover.png" width="70"></div>
+                        </div>
+                        <div class="on-icerik-yazi mt-4"><h5>Kullanıcı Dostu Tasarım</h5>
+                        <div class="cizgi"><hr></div>
+                        <p>Web sitenize giren ziyaretçilerin web sitenizi daha rahat kullanmaları açısından kullanımı kolay ve anlaşılabilir tasarım.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 web d-flex flex-column align-items-center">                       
+                        <div class="on-icerik-icon position-relative"><img class="ilk-once" src="./images/kurumsal.png" width="70">
+                        <div class="on-icerik-hover position-absolute"><img src="./images/kurumsal-hover.png" width="70"></div>
+                        </div>
+                        <div class="on-icerik-yazi mt-4"><h5>Kurumsal Site Tasarımı</h5>
+                        <div class="cizgi"><hr></div>
+                        <p>Kurumunuzun internetteki temsilcisi web sitenizdir. Kurumsal web tasarımınız etkili ve ilgi çekici ise geri dönüşüm etkisi fazla olur.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 web d-flex flex-column align-items-center">                       
+                        <div class="on-icerik-icon position-relative"><img class="ilk-once" src="./images/yaratıcı.png" width="70">
+                        <div class="on-icerik-hover position-absolute"><img src="./images/yaratıcı-hover.png" width="70"></div>
+                        </div>
+                        <div class="on-icerik-yazi mt-4"><h5>Yaratıcı ve Farklı Tasarım</h5>
+                        <div class="cizgi"><hr></div>  
+                        <p>Özel Tasarım projelerimizde size özel yaratıcı tasarımlar ve fikirler sunuyoruz. Farkınızı ortaya çıkarıyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 web d-flex flex-column align-items-center">                       
+                        <div class="on-icerik-icon position-relative"><img class="ilk-once" src="./images/responsive.png" width="70">
+                        <div class="on-icerik-hover position-absolute"><img src="./images/responsive-hover.png" width="70"></div>
+                        </div>
+                        <div class="on-icerik-yazi mt-4"><h5>Responsive ( Mobil Uyumlu )</h5>
+                        <div class="cizgi"><hr></div>
+                        <p>Tüm web tarayıcıları ile mobil cihazlarınızla uyumlu olarak kodluyoruz ve web sitenizin tüm cihazlarda kusursuz görünmesini sağlıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ikinci içerik -->
+        <section>
+            <div class="container ikinci-icerik">
+                <div class="row">
+                    <div class="col-xl-6 p-0 resim d-flex align-items-center">
+                        <img src="./images/ikinci-icerik-foto.png" alt="web tasarım">
+                    </div>
+                    <div class="col-xl-6 d-flex flex-column align-items-center p-5 mt-4">
+                        <div class="row">
+                            <div class="col-sm-6 text-center text-md-start ikinci-icerik-items">
+                            <div class="baslik d-flex align-items-center"><img src="./images/hayal-gücü.png"><h5>Hayal Gücü</h5></div>                            
+                            <p>Web sitenizi alışılmışın dışında tamamen farklı özgün tasarım ve özgün içerik ile tasarlıyoruz.</p> 
+                            </div>
+                            <div class="col-sm-6 text-center text-md-start ikinci-icerik-items">
+                            <div class="baslik d-flex align-items-center"><img src="./images/temiz-kod.png"><h5 style="padding-top: 1.5rem;">Temiz Kodlama</h5></div>                            
+                            <p style="margin-top: 1.5rem;"> Web sitenizde bilinen karmaşık kodlamaların aksine çok sade ve web dostu kodlama yapıyoruz.</p> 
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-6 text-center text-md-start ikinci-icerik-items">
+                            <div class="baslik d-flex align-items-center"><img src="./images/web-standart.png"><h5>Web Standartları</h5></div>                           
+                            <p>Tüm tasarım, altyapı ve kodlama aşamalarını web standartlarına uygun olarak yapıyoruz.</p> 
+                            </div>
+                            <div class="col-sm-6 text-center text-md-start ikinci-icerik-items">
+                            <div class="baslik d-flex align-items-center"><img src="./images/yayınlama.png"><h5>Yayınlama</h5></div>                           
+                            <p>Tüm Çalışmalar ve Kontroller Tamamlandıktan Sonra Onayınıza sunulur ve Yayınları.</p> 
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-6 text-center text-md-start ikinci-icerik-items">
+                            <div class="baslik d-flex align-items-center"><img src="./images/görsel.png"><h5>Görsel Tasarım</h5></div>                           
+                            <p>Tüm tasarım, altyapı ve kodlama aşamalarını web standartlarına uygun olarak yapıyoruz.</p> 
+                            </div>
+                            <div class="col-sm-6 text-center text-md-start ikinci-icerik-items">
+                            <div class="baslik d-flex align-items-center"><img src="./images/destek.png"><h5>Ücretsiz Destek</h5></div>                           
+                            <p>Bizden aldığınız her türlü hizmet süresince yanınızdayız. Her an destek alabilmeniz için 7/24 buradayız.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+                
+            </div>
+        </section>
+
+        <!-- Hakkımızda -->
+        <section id="hakkimizda" class="basliklar">
+            <div class="container-fluid hakkimdaRenk pt-lg-5">
+                <div class="container mobilHakkimizda">
+                    <div class="col-md-12 mt-5 pt-3 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center align-items-center">
+                        <h2>Hakkimizda</h2> 
+                        <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
+                    </div>
+                    <div class="col-md-12">
+                        <p style="text-align: center;">Kişiye ve kurumlara özel özgün, yenilikçi ve kullanıcı dostu web siteleri üretiyoruz.</p>
+                        <div class="row pt-4">
+                            <div class="col-xl-5">
+                                <h6>Biz</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, excepturi corporis, veniam iste aut,
+                                    aspernatur doloremque voluptates ad iure mollitia inventore soluta eius dolores magnam illum est quasi
+                                    nesciunt repudiandae possimus consectetur atque suscipit praesentium reprehenderit voluptate! Veritatis 
+                                    excepturi, eos at quis suscipit vitae illo facilis libero dolore fuga incidunt magnam aliquid delectus, ad, consequatur 
+                                    voluptate. Odit illo delectus, repudiandae maiores maxime tempora aperiam sequi voluptates nostrum officia debitis laborum 
+                                    ccusamus saepe neque distinctio reiciendis nobis sunt atque asperiores, provident nemo porro beatae. Obcaecati, itaque ipsum 
+                                    repudiandae necessitatibus consectetur provident sed nisi, inventore tenetur id aspernatur quia at minus distinctio!</p>
+                            </div>
+                            <div class="col-xl-7 hakkimizda-wrap">
+                                <div class="col-lg-12">
+                                    <h6> Sorumluluklarımız</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h6> Kimelere hizmet verebiliriz ?</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h6>  Vizyonumuz</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h6>  Kalite anlayışımız</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hizmetler -->
+        <section id="hizmetlerimiz" class="basliklar">
+                <div class="container text-center pt-lg-5">
+                    <div class="col-md-12 pt-5 mt-4 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center align-items-center"><h2>Hizmetlerimiz</h2> 
+                        <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
+                    </div>
+                </div>
+                <div class="container-fluid webTasarim mt-3">
+                    <div class="container position-relative webTasarimKutu">
+                        <div class="col-md-6 position-absolute webTasarimResim d-none d-lg-block top-0 start-0">
+                            <img src="./images/denemelik.png" alt="webtasarimresim" width="200" height="auto">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-xl-block position-absolute webTasarimResim2 bottom-0 start-0">
+                                <img src="./images/webtasarimresim2.png" alt="webtasarimresim" width="300" height="auto">
+                            </div>
+                            <div class="col-lg-9 webTasarimicerik position-absolute end-0 top-0">                        
+                                <h3><img src="./images/görsel.png" alt="webtasarim" width="50" height="auto" style="margin-right: 1.5rem;">WEB TASARIM</h3>
+                                <p>Meto yazılım web tasarım konusunda uzman ve deneyim kadrosuyla sizlere web tasarım, yazılım ve tasarım hizmeti sunmaktadır.
+    
+                                    2004 Yılından beri müşterilerimize yenilikçi, kullanıcı dostu ve yaratıcı tasarımlar sunmaktayız. Türkiye'de en çok özel tasarım ve yazılımlı web sitesi referansı sahip tam hizmet ajansıyız. Ceviz Bilişim hazır tasarım ve yazılımlardan kaçınarak firmaların kurumsal yapılarına uygun ve yenilikçi internet siteleri üretmeyi kendine ilke edinmiştir.
+                                    
+                                    Web Tasarımı yaparken her türlü kullanıcının rahat kullanması için kullanıcı dostu siteler oluşturmaktayız. Tasarımlarımızı güncel teknoloji ile desteklemekteyiz. Bir internet sitesinden daha fazlasını müşterilerimize vermeyi hedeflemekteyiz.
+                                    
+                                    İnternet sitesini müşterilerimizin istekleri doğrultusunda tasarlayıp, müşterinin hayalindeki internet sitesini oluşturmaktayız. Kurumsal internet sitesi oluştururken firmanın kurumsal renkleri ve kurumsal çalışmaları dikkate alınarak hazırlanmaktadır.</p>
+                            </div>  
+                        </div>                   
+                    </div>
+                </div>
+                <div class="container kurumsalSite mt-5 p-5">
+                    <div class="col-md-9 kurumsalSiteicerik p-5">
+                        <h3>KURUMSAL SİTE TASARIMI</h3>
+                        <p>Kurumunuzun internetteki temsilcisi web sitenizdir. Kurumsal web tasarımınız, etkili ve ilgi çekici ise geri dönüşüm etkisi fazla olur. Bu nedenle firmanız için kurumsal web tasarımı yaptırmak istediğinizde profesyonel bir firmadan destek almanız gerekmektedir.
+    
+                            Kurumsal web tasarım, bir işletme ya da kurum ile ilgili hizmet sunduğu kitleye doğrudan arz edileceği sebebiyle tüm ayrıntılar ele alınarak çalışılmalıdır.
+                            
+                            Dijital kimliğiniz ile ilgili yapılabilecek en ufak bir hata, saygınlığınız ve prestijiniz açısından kötü sonuçlar doğurabilmektedir. Bir firma için Kurumsal Web Site Tasarımı yaptırmak istenildiğinde o kurumun kurumsal renkleri, kurumsal kimliği, kurumsal fontu, kurumsal logosu, vizyonu, hizmetleri, ürünleri ve faaliyetleri hususlarında son derece uyum ve çerçeve içerisinde değerlendirilmeli ve kurumsal web site tasarımı bu etmenler dikkate alınarak dizayn edilmelidir.
+                    </div>
+                    <div class="col-md-9 kurumsalResim"></div>
+                </div>
+        </section>
+
+        <!-- iletisim -->
+        <section id="iletisim" class="basliklar">
+            <div class="container text-center pt-lg-5">
+                <div class="col-md-12 pt-5 mt-4 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center align-items-center"><h2>İletişim</h2> 
+                    <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
+                </div>
+                <div class="col-md-12">
+                    <p>Bizimle İletişim Kurun </p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-9 text-start iletisimForm ">
+                        <h3>İletişim Formu</h3>
+                        <p>Aşağıdaki iletişim formunu vakit ayırıp doldurmanız; belki de iş hayatınızın yeni bir dönüm noktası olabilir. Ayrıca bu formu, öneri ve şikayetleriniz için de kullanabilirsiniz. Hizmetlerimizi daha da geliştirmek, sizi daha iyi anlamak ve kazandırmak adına görüşleriniz bizim için değerlidir.</p> 
+                        <form action="#" method="post">
+                            <label class="form-grup d-flex align-items-center">
+                                <i class="bi bi-person-fill"></i>
+                                <span class="form-wrap">
+                                    <input type="text" class="border-0" name="adSoyad" maxlength="25" minlength="3" required="" placeholder="Adınız Soyadınız">
+                                </span>
+                            </label>
+                            <label class="form-grup d-flex align-items-center">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span class="form-wrap">
+                                    <input type="email" class="border-0" name="email" maxlength="25" minlength="3" required="" placeholder="E-Mail Adresiniz">
+                                </span>
+                                <i class="bi bi-telephone-fill"></i>
+                                <span class="form-wrap">
+                                    <input type="tel" class="border-0" name="tel" maxlength="10" minlength="10" required="" placeholder="Telefon Numaranız">
+                                </span>
+                            </label>
+                            <label class="form-grup d-flex">
+                                <i class="bi bi-chat-right-fill pt-2"></i>
+                                <span class="form-wrap">
+                                    <textarea name="mesaj" class="border-0" id="mesaj"rows="5" cols="50" minlength="30" required="" maxlength="220" placeholder="Mesajınız"></textarea>
+                                </span>
+                            </label>
+                            <div class="btn-wrap">
+                                <input type="submit" value="Gönder" class="button">
+                            </div>
+                        </form>                      
+                    </div>
+                    <div class="col-md-3 iletisimBilgileri pt-4">
+                        <div class="col-sm-12 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center"> 
+                            <h3>Bize Ulaşın</h3>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div>
+                        <div class="baslik mt-5 d-flex justify-content-center align-items position-relative"><h5>Temsilci</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div>
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-telephone-fill"></i>&nbsp;
+                            <p>543 000 00 00</p>                               
+                        </div>    
+                        <div class="baslik mt-3 position-relative d-flex justify-content-center align-items"><h5>Developer</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div> 
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-telephone-fill"></i>&nbsp;
+                            <p>543 000 00 00</p>    
+                        </div>      
+                        <div class="baslik mt-3 position-relative d-flex justify-content-center align-items"><h5>Mail</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div> 
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-envelope-fill"></i>&nbsp;
+                            <p>esraçirkinördekyavrusu@gmail.com</p>    
+                        </div>  
+                        <div class="baslik mt-4 position-relative d-flex justify-content-center align-items"><h5>Öneri ve Şikayetleriniz</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div> 
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-envelope-fill"></i>&nbsp;
+                            <p>loremsikayet@gmail.com</p>    
+                        </div> 
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- footer alt kısım -->
+        <footer>
+            <div class="container-fluid mt-5 text-center text-md-start">                     
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-3 footer-digital text-light">
+                            <a href="index.html"><img src="./images/logosonhali.png" style="width: 150px; height:80px;" alt="logo"></a>
+                            <ul class="list-unstyled">                               
+                                <div class="hizmet-hakkinda-items ps-0"><li"><i class="bi bi-tag"></i>
+                                <a href="#">Sorumluluklarımız</a></li></div>
+                                <div class="hizmet-hakkinda-items ps-0"><li"><i class="bi bi-tag"></i>
+                                <a href="#">Kimelere hizmet verebiliriz ?</a></li></div>
+                                <div class="hizmet-hakkinda-items ps-0"><li"><i class="bi bi-tag"></i>
+                                <a href="#">Vizyonumuz</a></li></div>
+                                <div class="hizmet-hakkinda-items ps-0"><li"><i class="bi bi-tag"></i>
+                                <a href="#">Kalite anlayışımız</a></li></div>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer-digital text-light p-3">
+                            <h4>Hizmetlerimiz</h4>
+                            <ul class="list-unstyled">
+                                <div class="hizmet-hakkinda-items ps-0"><li><i class="bi bi-window-dock"></i> <a href="#">Web Tasarım</a></li></div>
+                                <div class="hizmet-hakkinda-items ps-0"><li><i class="bi bi-brush"></i> <a href="#">Logo</a></li></div>
+                                <div class="hizmet-hakkinda-items ps-0"><li><i class="bi bi-google"></i> <a href="#">Google Adwords</a></li></div>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer-digital ulasim text-light p-3">
+                            <h4>Bize ulaşın</h4>
+                            <ul class="list-unstyled d-flex flex-column justify-content-center">
+                                <li class="d-flex align-items-center justify-content-center justify-content-md-start"><i class="bi bi-telephone-fill pe-1 pb-2 footer-icons"></i><h6>Telefon</h6></li>
+                                <li class="ulasim-items ps-0"><p>543 000 00 00</p></li>
+                                <li class="d-flex align-items-center justify-content-center justify-content-md-start"><i class="bi bi-telephone-fill pe-1 pb-2 footer-icons"></i><h6>Telefon</h6></li>
+                                <li class="ulasim-items ps-0"><p>543 000 00 00</p></li>
+                                <li class="d-flex align-items-center justify-content-center justify-content-md-start"><i class="bi bi-envelope-fill pe-1 pb-2 footer-icons"></i><h6>E-Mail Adresi</h6></li>
+                                <li class="ulasim-items ps-0"><p>esraçirkinördekyavrusu@gmail.com</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer-digital sosyal text-light p-3 d-flex flex-column">
+                            <h4>Sosyal medya</h4>
+                            <ul class="list-unstyled">
+                                <span class="insta sosyal-items"><li class="pb-3"><a href="#" target="_blank"><i class="bi bi-instagram pe-3"></i>İnstagram</a></li></span>
+                                <span class="twitt sosyal-item"><li class="pb-3"><a href="#"><i class="bi bi-twitter pe-3"></i>Twitter</a></li></span>
+                                <span class="face sosyal-item"><li><a href="#"><i class="bi bi-facebook pe-3"></i>Facebook</a></li></span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer 2 haklar -->
+            <div class="container-fluid footer-haklar">
+                <div class="container">
+                    <div class="row d-flex text-center text-md-start">
+                        <div class="col-md-6 text-secondary mb-4">                       
+                            <p>Copyright © 2021 - 2022 Meto Yazılım Tüm Hakları Saklıdır.</p>
+                        </div>
+                        <div class="col-md-6 text-secondary mb-4 text-md-end">
+                            <p><a href="#"> K.V.K.K. </a> | <a href="#"> Çerez Politikası </a> | <a href="#"> Mesafeli Satış Sözleşmesi </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <!-- yukarı çık butonu -->
+            <div id="yukari">
+                <i class="bi bi-arrow-up-short"></i>
+            </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+    <!-- navbar -->
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+            <!-- Kayma -->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 350) {
+                $('#yukari').fadeIn(200);
+            } else {
+                $('#yukari').fadeOut(200);
+            }
+        });
+
+        // Tıklama
+        $('#yukari').on('click', function() {
+            $("html, body").animate({scrollTop: 0}, 0);
+        });
+    </script>
+</body>
+</html>

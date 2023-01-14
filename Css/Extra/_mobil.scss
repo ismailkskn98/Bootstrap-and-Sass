@@ -1,0 +1,79 @@
+@media (min-width: 768px) and (max-width: 992px) {
+    .randevu-icerik {
+    margin-top: 2rem;
+    }
+    .slider{
+        margin-bottom: 8rem;
+    }
+    .aciklama {
+        margin-top: 25rem;
+        margin-bottom: 1rem;
+        .aciklama-resim{
+            img{
+                width: 40%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .aciklama{
+        .aciklama-resim{
+            img{
+                width: 50%;
+            }
+        }
+    }
+    .ikinci-icerik{
+        border: 0;
+        .baslik{
+            justify-content: center;
+        }
+        .ikinci-icerik-items{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+//* hakkimizda
+@media(max-width: 1200px){
+    #hakkimizda{
+        .mobilHakkimizda{
+            margin-top: -2rem;
+            p{
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+//* hizmetler
+@media(max-width: 1200px){
+    #hizmetlerimiz{
+        .webTasarim{
+            .webTasarimKutu{
+                .webTasarimicerik{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 991px){
+    #hizmetlerimiz{
+        .webTasarim{
+            -webkit-border-bottom-right-radius: 0px;
+            -moz-border-radius-bottomright: 0px;
+            border-bottom-right-radius: 0px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    #hizmetlerimiz{
+        .webTasarim{
+            text-align: center;
+            height: 45rem;
+        }
+    }
+}
