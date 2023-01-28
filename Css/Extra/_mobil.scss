@@ -1,15 +1,18 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .randevu-icerik {
-    margin-top: 2rem;
+        margin-top: 2rem;
     }
-    .slider{
+
+    .slider {
         margin-bottom: 8rem;
     }
+
     .aciklama {
         margin-top: 25rem;
         margin-bottom: 1rem;
-        .aciklama-resim{
-            img{
+
+        .aciklama-resim {
+            img {
                 width: 40%;
                 height: auto;
             }
@@ -17,31 +20,37 @@
     }
 }
 
-@media (max-width: 768px){
-    .aciklama{
-        .aciklama-resim{
-            img{
+@media (max-width: 768px) {
+    .aciklama {
+        .aciklama-resim {
+            img {
                 width: 50%;
             }
         }
     }
-    .ikinci-icerik{
+
+    .ikinci-icerik {
         border: 0;
-        .baslik{
+
+        .baslik {
             justify-content: center;
         }
-        .ikinci-icerik-items{
+
+        .ikinci-icerik-items {
             margin-bottom: 1rem;
         }
     }
 }
 
 //* hakkimizda
-@media(max-width: 1200px){
-    #hakkimizda{
-        .mobilHakkimizda{
+@media(max-width: 1200px) {
+    #hakkimizda {
+        text-align: center;
+
+        .mobilHakkimizda {
             margin-top: -2rem;
-            p{
+
+            p {
                 line-height: 30px;
             }
         }
@@ -49,29 +58,78 @@
 }
 
 //* hizmetler
-@media(max-width: 1200px){
-    #hizmetlerimiz{
-        .webTasarim{
-            .webTasarimKutu{
-                .webTasarimicerik{
-                    left: 0;
-                }
+@media(max-width: 1200px) {
+    #hizmetlerimiz {
+        .webTasarim {
+            -webkit-border-bottom-right-radius: 0;
+            -moz-border-radius-bottom-right: 0;
+            border-bottom-right-radius: 0;
+            -webkit-border-bottom-left-radius: 0;
+            -moz-border-radius-bottom-left: 0;
+            border-bottom-left-radius: 0;
+            margin-bottom: 1.5rem;
+            max-height:65rem;
+        }
+
+        .ozel-yazilim {
+            -webkit-border-top--radius: 0;
+            -moz-border-radius-top-right: 0;
+            border-top-right-radius: 0;
+            -moz-border-radius-top-left: 0;
+            -webkit-border-top-left-radius: 0;
+            border-top-left-radius: 0;
+            -webkit-border-bottom-left-radius: 0;
+            -moz-border-radius-bottom-left: 0;
+            border-bottom-left-radius: 0;
+            -webkit-border-bottom-right-radius: 0;
+            -moz-border-radius-bottom-right: 0;
+            border-bottom-right-radius: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .sosyal-medya {
+            -webkit-border-top-right-radius: 0;
+            -moz-border-radius-top-right: 0;
+            border-top-right-radius: 0;
+            -webkit-border-top-left-radius: 0;
+            -moz-border-radius-top-left: 0;
+            border-top-left-radius: 0;
+        }
+    }
+    #iletisim{
+        .iletisimForm{
+            .btn-wrap{
+                justify-content: center;
             }
         }
     }
+    .slider{
+        .mobilGiris{
+           margin-top: -15rem;
+           text-align: center;
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           background-color: #2222229f;
+           height: 80%;
+        }
+    }
 }
-@media(max-width: 991px){
-    #hizmetlerimiz{
-        .webTasarim{
+
+
+@media(max-width: 991px) {
+    #hizmetlerimiz {
+        .webTasarim {
             -webkit-border-bottom-right-radius: 0px;
             -moz-border-radius-bottomright: 0px;
             border-bottom-right-radius: 0px;
         }
     }
 }
+
 @media (max-width: 768px) {
-    #hizmetlerimiz{
-        .webTasarim{
+    #hizmetlerimiz {
+        .webTasarim {
             text-align: center;
             height: 45rem;
         }

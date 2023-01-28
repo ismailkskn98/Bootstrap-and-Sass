@@ -7,12 +7,18 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-p, a {
+p,
+a {
   font-size: 0.9rem;
   letter-spacing: 1.1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: 1.1px;
 }
 
@@ -105,7 +111,8 @@ header.sticky li a {
 .randevu-icerik .randevu .form-grup .form-wrap:focus {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-.randevu-icerik .randevu .form-grup .form-wrap input, .randevu-icerik .randevu .form-grup .form-wrap textarea {
+.randevu-icerik .randevu .form-grup .form-wrap input,
+.randevu-icerik .randevu .form-grup .form-wrap textarea {
   background-color: #222222;
   resize: none;
   padding: 0.5rem;
@@ -113,7 +120,8 @@ header.sticky li a {
   color: white;
   width: 100%;
 }
-.randevu-icerik .randevu .form-grup .form-wrap input:focus, .randevu-icerik .randevu .form-grup .form-wrap textarea:focus {
+.randevu-icerik .randevu .form-grup .form-wrap input:focus,
+.randevu-icerik .randevu .form-grup .form-wrap textarea:focus {
   outline: none;
 }
 
@@ -139,14 +147,16 @@ header.sticky li a {
 .randevu .form-grup .form-wrap:focus {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-.randevu .form-grup .form-wrap input, .randevu .form-grup .form-wrap textarea {
+.randevu .form-grup .form-wrap input,
+.randevu .form-grup .form-wrap textarea {
   resize: none;
   padding: 0.5rem;
   border: 0;
   color: white;
   width: 100%;
 }
-.randevu .form-grup .form-wrap input:focus, .randevu .form-grup .form-wrap textarea:focus {
+.randevu .form-grup .form-wrap input:focus,
+.randevu .form-grup .form-wrap textarea:focus {
   outline: none;
 }
 
@@ -267,43 +277,74 @@ section .container .row .on-icerik-yazi .cizgi hr {
   background-color: rgba(34, 34, 34, 0.9);
   height: auto;
 }
+#hakkimizda h5,
 #hakkimizda h6 {
   font-weight: 600;
   text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #018BD3;
+  display: inline-block;
 }
 #hakkimizda p {
   color: white;
-  line-height: 250%;
+  line-height: 200%;
+  transition: all 0.5s;
+}
+#hakkimizda p:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+#hizmetlerimiz {
+  background-image: url(/images/hizmetler.jpg);
+  background-repeat: no-repeat;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 #hizmetlerimiz p {
   line-height: 200%;
   letter-spacing: 2px;
-  color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 #hizmetlerimiz .webTasarim {
-  height: 35rem;
-  background-color: #f3f3f3;
+  min-height: 30rem;
+  background-color: rgba(34, 34, 34, 0.6235294118);
+  -webkit-border-bottom-right-radius: 300px;
+  -moz-border-radius-bottom-right: 300px;
+  border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  -moz-border-radius-bottom-left: 300px;
+  border-bottom-left-radius: 300px;
+  color: white;
+}
+#hizmetlerimiz .ozel-yazilim {
+  min-height: 30rem;
+  background-color: rgba(34, 34, 34, 0.6235294118);
+  color: white;
+  -webkit-border-top--radius: 300px;
+  -moz-border-radius-top-right: 300px;
+  border-top-right-radius: 300px;
+  -moz-border-radius-top-left: 300px;
+  border-top-left-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  -moz-border-radius-bottom-left: 300px;
+  border-bottom-left-radius: 300px;
+  -webkit-border-bottom-right-radius: 300px;
+  -moz-border-radius-bottom-right: 300px;
   border-bottom-right-radius: 300px;
 }
-#hizmetlerimiz .webTasarim .webTasarimKutu {
-  height: 100%;
-}
-#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim {
-  margin-top: -4.5rem;
-  margin-left: -1rem;
-}
-#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim2 {
-  margin-bottom: -5rem;
-  margin-left: -1.5rem;
-}
-#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim2 img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimicerik {
-  margin-top: 4rem;
-  margin-right: -1.5rem;
+#hizmetlerimiz .sosyal-medya {
+  min-height: 30rem;
+  background-color: rgba(34, 34, 34, 0.6235294118);
+  color: white;
+  -webkit-border-top-right-radius: 300px;
+  -moz-border-radius-top-right: 300px;
+  border-top-right-radius: 300px;
+  -webkit-border-top-left-radius: 300px;
+  -moz-border-radius-top-left: 300px;
+  border-top-left-radius: 300px;
 }
 
 #iletisim .iletisimForm {
@@ -346,7 +387,7 @@ section .container .row .on-icerik-yazi .cizgi hr {
   padding: 1rem;
 }
 #iletisim .iletisimForm .btn-wrap .button {
-  width: 15%;
+  width: 20%;
   height: 2.5rem;
   background-color: #018BD3;
   border: none;
@@ -391,12 +432,16 @@ footer .container-fluid {
 footer .container-fluid h4 {
   padding-bottom: 0.75rem;
 }
-footer .container-fluid .footer-digital .hizmet-hakkinda-items, footer .container-fluid .footer-digital .ulasim-items {
+footer .container-fluid .footer-digital .hizmet-hakkinda-items,
+footer .container-fluid .footer-digital .ulasim-items {
   padding: 0.5rem;
   font-size: 0.8rem;
   color: #bcc4c9;
 }
-footer .container-fluid .footer-digital .hizmet-hakkinda-items a, footer .container-fluid .footer-digital .hizmet-hakkinda-items p, footer .container-fluid .footer-digital .ulasim-items a, footer .container-fluid .footer-digital .ulasim-items p {
+footer .container-fluid .footer-digital .hizmet-hakkinda-items a,
+footer .container-fluid .footer-digital .hizmet-hakkinda-items p,
+footer .container-fluid .footer-digital .ulasim-items a,
+footer .container-fluid .footer-digital .ulasim-items p {
   color: #bcc4c9;
 }
 footer .container-fluid .footer-digital .hizmet-hakkinda-items {
@@ -579,6 +624,9 @@ footer .sosyal .face a:hover {
   }
 }
 @media (max-width: 1200px) {
+  #hakkimizda {
+    text-align: center;
+  }
   #hakkimizda .mobilHakkimizda {
     margin-top: -2rem;
   }
@@ -587,8 +635,49 @@ footer .sosyal .face a:hover {
   }
 }
 @media (max-width: 1200px) {
-  #hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimicerik {
-    left: 0;
+  #hizmetlerimiz .webTasarim {
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottom-right: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottom-left: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 1.5rem;
+    max-height: 65rem;
+  }
+  #hizmetlerimiz .ozel-yazilim {
+    -webkit-border-top--radius: 0;
+    -moz-border-radius-top-right: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-top-left: 0;
+    border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottom-left: 0;
+    border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottom-right: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 1.5rem;
+  }
+  #hizmetlerimiz .sosyal-medya {
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-top-right: 0;
+    border-top-right-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-top-left: 0;
+    border-top-left-radius: 0;
+  }
+  #iletisim .iletisimForm .btn-wrap {
+    justify-content: center;
+  }
+  .slider .mobilGiris {
+    margin-top: -15rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.6235294118);
+    height: 80%;
   }
 }
 @media (max-width: 991px) {

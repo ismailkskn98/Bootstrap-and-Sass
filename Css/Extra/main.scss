@@ -1,28 +1,40 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-*{
+
+* {
     font-family: 'Open Sans', sans-serif;
 }
-p, a{
+
+p,
+a {
     font-size: 0.9rem;
     letter-spacing: 1.1px;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     letter-spacing: 1.1px;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 //menu header
-header{
+header {
     width: 100%;
     transition: 0.6s;
     z-index: 100000;
-    li{
+
+    li {
         list-style: none;
-        a{
+
+        a {
             text-decoration: none;
             color: white;
             margin: 0 15px;
@@ -32,45 +44,54 @@ header{
             font-size: 0.9rem;
         }
     }
-    .logo{
-        img{
+
+    .logo {
+        img {
             transition: 0.6s;
             max-width: 50%;
             height: auto;
             transition: all .3s ease-in-out;
-            &:hover{
+
+            &:hover {
                 -webkit-transform: translateY(-5px);
                 transform: translateY(-5px);
             }
         }
     }
 }
-header.sticky{
+
+header.sticky {
     background-color: #222222;
-    .logo{
-        img{
+
+    .logo {
+        img {
             transition: 0.6s;
             max-width: 35%;
         }
     }
-    li{
-        a{
+
+    li {
+        a {
             font-size: 0.8rem;
         }
     }
 }
-.navbar{
+
+.navbar {
     background: #222222;
 }
-.nav-item{
-    a{
+
+.nav-item {
+    a {
         color: #222222;
         transition: all .5s ease-in-out;
-        &:hover{
+
+        &:hover {
             background-color: #018BD3;
         }
     }
 }
+
 .slider {
     background-image: url(/images/slider5.jpg);
     background-repeat: center center;
@@ -79,81 +100,100 @@ header.sticky{
     width: 100%;
     height: 800px;
 
-    .sliderRenk{
+    .sliderRenk {
         background-color: rgba(34, 34, 34, 0.6);
         height: 800px;
     }
 }
+
 // randevu
-.randevu-icerik{
+.randevu-icerik {
     background-color: #222222;
-    .randevu{
+
+    .randevu {
         padding: 1.5rem;
-        .form-grup{
-            padding: 0.5rem 0 ;
-            .form-wrap{
+
+        .form-grup {
+            padding: 0.5rem 0;
+
+            .form-wrap {
                 padding: 0.3rem;
                 border: 0;
                 border-bottom: 1px solid rgba(211, 209, 209, 0.459);
                 transition: all .5s ease-in-out;
                 width: 85%;
-                &:hover{
+
+                &:hover {
                     border-bottom: 1px solid rgb(255, 255, 255);
                 }
-                &:focus{
+
+                &:focus {
                     border-bottom: 1px solid rgb(255, 255, 255);
                 }
-                input,textarea{
-                    background-color:#222222;
+
+                input,
+                textarea {
+                    background-color: #222222;
                     resize: none;
                     padding: 0.5rem;
                     border: 0;
                     color: white;
                     width: 100%;
-                    &:focus{
-                        outline:none;
+
+                    &:focus {
+                        outline: none;
                     }
-                }
-            }
-        }
-    } 
-}
-.randevu{
-    padding: 1.5rem;
-    .form-grup{
-        padding: 0.5rem 0 ;
-        .form-wrap{
-            display: flex;
-            justify-content: center;
-            align-items: center ;
-            padding: 0.3rem;
-            border: 0;
-            border-bottom: 1px solid rgba(211, 209, 209, 0.459);
-            transition: all .5s ease-in-out;
-            width: 85%;
-            &:hover{
-                border-bottom: 1px solid rgb(255, 255, 255);
-            }
-            &:focus{
-                border-bottom: 1px solid rgb(255, 255, 255);
-            }
-            input,textarea{
-                resize: none;
-                padding: 0.5rem;
-                border: 0;
-                color: white;
-                width: 100%;
-                &:focus{
-                    outline:none;
                 }
             }
         }
     }
 }
+
+.randevu {
+    padding: 1.5rem;
+
+    .form-grup {
+        padding: 0.5rem 0;
+
+        .form-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.3rem;
+            border: 0;
+            border-bottom: 1px solid rgba(211, 209, 209, 0.459);
+            transition: all .5s ease-in-out;
+            width: 85%;
+
+            &:hover {
+                border-bottom: 1px solid rgb(255, 255, 255);
+            }
+
+            &:focus {
+                border-bottom: 1px solid rgb(255, 255, 255);
+            }
+
+            input,
+            textarea {
+                resize: none;
+                padding: 0.5rem;
+                border: 0;
+                color: white;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
 .randevu-icerik {
-    box-shadow: 0px 0px 20px black;   
-    .randevuBtn{
-        .button{
+    box-shadow: 0px 0px 20px black;
+
+    .randevuBtn {
+        .button {
             background-color: #222222;
             color: white;
             margin-top: 1rem;
@@ -164,7 +204,8 @@ header.sticky{
             transition: all .3s ease-in-out;
             border-bottom: 1px solid #222222;
             border-radius: 2%;
-            &:hover{
+
+            &:hover {
                 border-bottom: 1px solid rgb(255, 255, 255);
                 border-radius: 2%;
                 color: white;
@@ -176,67 +217,75 @@ header.sticky{
 
 
 // giris aciklama
-.aciklama{
-    .aciklama-resim{
-        img{
+.aciklama {
+    .aciklama-resim {
+        img {
             max-width: 70%;
             height: auto;
         }
     }
-    .aciklama-icerik{
-        hr{     
+
+    .aciklama-icerik {
+        hr {
             border: none;
             border-left: 1px solid black;
             height: 5.5rem;
-            width: 1px;       
+            width: 1px;
         }
     }
 }
 
 // ilk icerik
-section{
-    .container{
-        .row{
-            .on-icerik-icon{
+section {
+    .container {
+        .row {
+            .on-icerik-icon {
                 width: 5rem;
-                max-height:4rem;
-                padding:3rem 3rem;
+                max-height: 4rem;
+                padding: 3rem 3rem;
                 border: 2px solid rgb(230, 230, 230);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 100%;
                 transition: all .5s ease-in-out;
-                .on-icerik-hover{
+
+                .on-icerik-hover {
                     opacity: 0;
                     transition: all .2s ease-in-out;
                     width: 5rem;
-                    max-height:4rem;
-                    padding:3rem 3rem;
+                    max-height: 4rem;
+                    padding: 3rem 3rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    &:hover{
+
+                    &:hover {
                         opacity: 1;
                     }
                 }
-                &:hover{
+
+                &:hover {
                     background-color: #018BD3;
                     border: 2px solid #018BD3;
-                    .ilk-once{
+
+                    .ilk-once {
                         opacity: 0;
                     }
                 }
             }
-            .on-icerik-yazi{
-                h3{
-                padding-bottom: 0.75rem;
+
+            .on-icerik-yazi {
+                h3 {
+                    padding-bottom: 0.75rem;
                 }
-                .cizgi{
+
+                .cizgi {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    hr{
+
+                    hr {
                         color: #018BD3;
                         width: 10rem;
                     }
@@ -245,16 +294,19 @@ section{
         }
     }
 }
-.basliklar{
-    h2{
-    display: inline;
-    font-family: 'Montserrat', sans-serif;
+
+.basliklar {
+    h2 {
+        display: inline;
+        font-family: 'Montserrat', sans-serif;
     }
-    p{
+
+    p {
         color: #939393;
         padding-top: 1rem;
     }
-    .baslik-cizgi{
+
+    .baslik-cizgi {
         margin-top: 3rem;
         background-color: #018BD3;
         width: 40px;
@@ -263,17 +315,19 @@ section{
 }
 
 // ikinci-icerik
-.ikinci-icerik{    
-    .resim{        
-        img{
+.ikinci-icerik {
+    .resim {
+        img {
             max-width: 100%;
             height: auto;
         }
     }
-    .baslik{
-        padding-bottom: 1rem; 
-        padding-top: 0.5rem; 
-        img{
+
+    .baslik {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+
+        img {
             width: 25%;
             padding-right: 0.75rem;
             height: auto;
@@ -281,6 +335,7 @@ section{
     }
 
 }
+
 #hakkimizda {
     background-image: url(/images/hakkımda.jpg);
     background-repeat: center center;
@@ -288,246 +343,329 @@ section{
     background-attachment: fixed;
     background-position: center;
     color: white;
+
     .hakkimdaRenk {
-    background-color: rgba(34, 34, 34, 0.9);
-    height: auto;
-    }
-    h6{
-        font-weight: 600;
-        text-align: center;
-    }
-    p{
-    color: white;
-    line-height: 250%;
-    }
-}
-#hizmetlerimiz {
-    p{
-        line-height: 200%;
-        letter-spacing: 2px;
-        color: rgb(85, 85, 85);
-    }
-    .webTasarim {
-        height: 35rem;
-        background-color: #f3f3f3;
-        -webkit-border-bottom-right-radius: 300px;
-	    -moz-border-radius-bottomright: 300px;
-	    border-bottom-right-radius: 300px;
-        .webTasarimKutu{
-            height: 100%;
-            .webTasarimResim{
-                margin-top: -4.5rem;
-                margin-left: -1rem;
-            }
-            .webTasarimResim2{
-                margin-bottom: -5rem;
-                margin-left: -1.5rem;
-                img{
-                    object-fit: cover;
-                }
-            }
-            .webTasarimicerik {
-                margin-top: 4rem;
-                margin-right: -1.5rem;
-            }
-        }
+        background-color: rgba(34, 34, 34, 0.9);
+        height: auto;
     }
 
+    h5,
+    h6 {
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #018BD3;
+        display: inline-block;
     }
+
+    p {
+        color: white;
+        line-height: 200%;
+        transition: all 0.5s;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+    }
+}
+
+#hizmetlerimiz {
+    background-image: url(/images/hizmetler.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    p {
+        line-height: 200%;
+        letter-spacing: 2px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .webTasarim {
+        min-height: 30rem;
+        background-color: #2222229f;
+        -webkit-border-bottom-right-radius: 300px;
+        -moz-border-radius-bottom-right: 300px;
+        border-bottom-right-radius: 300px;
+        -webkit-border-bottom-left-radius: 300px;
+        -moz-border-radius-bottom-left: 300px;
+        border-bottom-left-radius: 300px;
+        color: white;
+    }
+
+    .ozel-yazilim {
+        min-height: 30rem;
+        background-color: #2222229f;
+        color: white;
+        -webkit-border-top--radius: 300px;
+        -moz-border-radius-top-right: 300px;
+        border-top-right-radius: 300px;
+        -moz-border-radius-top-left: 300px;
+        -webkit-border-top-left-radius: 300px;
+        border-top-left-radius: 300px;
+        -webkit-border-bottom-left-radius: 300px;
+        -moz-border-radius-bottom-left: 300px;
+        border-bottom-left-radius: 300px;
+        -webkit-border-bottom-right-radius: 300px;
+        -moz-border-radius-bottom-right: 300px;
+        border-bottom-right-radius: 300px;
+
+    }
+
+    .sosyal-medya {
+        min-height: 30rem;
+        background-color: #2222229f;
+        color: white;
+        -webkit-border-top-right-radius: 300px;
+        -moz-border-radius-top-right: 300px;
+        border-top-right-radius: 300px;
+        -webkit-border-top-left-radius: 300px;
+        -moz-border-radius-top-left: 300px;
+        border-top-left-radius: 300px;
+    }
+}
+
 #iletisim {
-    .iletisimForm{
-        color:#5d5d5d;
+    .iletisimForm {
+        color: #5d5d5d;
         font-size: 15px;
-        p{
+
+        p {
             margin-bottom: 3rem;
         }
-        .form-grup{
+
+        .form-grup {
             padding-bottom: 1.5rem;
-            .form-wrap{
-                margin: 1rem;               
-                width: 100%;      
-                border-bottom: 1px solid #d4d4d4;   
-                &:hover{
+
+            .form-wrap {
+                margin: 1rem;
+                width: 100%;
+                border-bottom: 1px solid #d4d4d4;
+
+                &:hover {
                     border-bottom: 1px solid rgb(160, 160, 160);
                 }
-                &:focus{
+
+                &:focus {
                     border-bottom: 1px solid rgb(160, 160, 160);
-                }    
-                input{
+                }
+
+                input {
                     padding: 0.5rem;
                     width: 100%;
-                    &:focus{
-                        outline:none;
+
+                    &:focus {
+                        outline: none;
                     }
                 }
-                textarea{
+
+                textarea {
                     width: 100%;
-                    &:focus{
-                        outline:none;
+
+                    &:focus {
+                        outline: none;
                     }
                 }
             }
         }
-        .btn-wrap{
+
+        .btn-wrap {
             display: flex;
             justify-content: end;
             padding: 1rem;
-            .button{
-                width: 15%;
+
+            .button {
+                width: 20%;
                 height: 2.5rem;
                 background-color: #018BD3;
                 border: none;
                 color: white;
                 border-radius: 2%;
                 transition: all .3s ease-in-out;
-                &:hover{
+
+                &:hover {
                     background-color: #0069a1;
                 }
             }
         }
     }
-    .iletisimBilgileri{
+
+    .iletisimBilgileri {
         box-shadow: 0px 0px 20px black;
         background: #222222;
         color: white;
         font-size: 1.3rem;
         border-radius: 1%;
-        h5{
+
+        h5 {
             font-size: 1.1rem;
             color: #018BD3;
         }
-        p{
+
+        p {
             color: white;
         }
+
         i {
             padding-right: 0.5rem;
         }
-        .baslik{
-            .baslik-cizgi{
+
+        .baslik {
+            .baslik-cizgi {
                 background-color: #ffffff;
                 width: 40px;
                 height: 1px;
-                margin-top: 1.9rem;           
+                margin-top: 1.9rem;
             }
         }
     }
 }
 
 // footer
-footer{
+footer {
     background-color: #222222;
-    .container-fluid{
+
+    .container-fluid {
         border-top: 2px solid #018BD3;
         padding-top: 1.70rem;
-        h4{
+
+        h4 {
             padding-bottom: 0.75rem;
         }
-        .footer-digital{           
-            .hizmet-hakkinda-items, .ulasim-items{
+
+        .footer-digital {
+
+            .hizmet-hakkinda-items,
+            .ulasim-items {
                 padding: 0.5rem;
                 font-size: 0.8rem;
                 color: #bcc4c9;
-                a,p{
+
+                a,
+                p {
                     color: #bcc4c9;
                 }
             }
-            .hizmet-hakkinda-items{
+
+            .hizmet-hakkinda-items {
                 transition: all .4s ease-in-out;
-                &:hover{
+
+                &:hover {
                     color: #018BD3;
                     transform: translate(1rem);
                     -webkit-transform: translate(1rem);
                 }
-                a{
-                    &:hover{
+
+                a {
+                    &:hover {
                         color: #018BD3;
                     }
                 }
             }
         }
-        .ulasim{
-            .ulasim-items{
-                margin-top: -1rem;             
-                p{font-size: 0.8rem;}                
+
+        .ulasim {
+            .ulasim-items {
+                margin-top: -1rem;
+
+                p {
+                    font-size: 0.8rem;
+                }
             }
-            .footer-icons{
+
+            .footer-icons {
                 color: #bcc4c9;
                 font-size: 0.8rem;
             }
         }
     }
-    .sosyal{
-        li{
+
+    .sosyal {
+        li {
             transition: all .4s ease-in-out;
-            &:hover{
-            transform: translate(1rem);
-            -webkit-transform: translate(1rem);    
+
+            &:hover {
+                transform: translate(1rem);
+                -webkit-transform: translate(1rem);
             }
-            a{
-            color: #bcc4c9;
-            font-size: 0.9rem;
-            transition: all .4s ease-in-out;
-            display: inline-block;
-            width: 100%;
+
+            a {
+                color: #bcc4c9;
+                font-size: 0.9rem;
+                transition: all .4s ease-in-out;
+                display: inline-block;
+                width: 100%;
             }
         }
-        .insta{
-            a{
-                &:hover{
+
+        .insta {
+            a {
+                &:hover {
                     color: #E42148;
                 }
-            }     
+            }
         }
-        .twitt{
-            a{
-                &:hover{
+
+        .twitt {
+            a {
+                &:hover {
                     color: #00acee;
                 }
-            }     
+            }
         }
-        .face{
-            a{
-                &:hover{
+
+        .face {
+            a {
+                &:hover {
                     color: #4062aa;
                 }
-            }     
+            }
         }
     }
 }
 
 // footer haklar
-.footer-haklar{
+.footer-haklar {
     background-color: #222222;
-    a{
+
+    a {
         font-size: 0.8rem;
         color: #6c747a;
         transition: all .2s ease-in-out;
-        &:hover{
+
+        &:hover {
             color: #bcc4c9;
         }
     }
 }
-#yukari{
-    display:none;
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    background:#0077b8;
-    width:50px;
-    height:50px;
-    text-align:center;
+
+#yukari {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #0077b8;
+    width: 50px;
+    height: 50px;
+    text-align: center;
     line-height: 50px;
-    border-radius:35px;
-    transition:all .3s ease;
-    z-index:999
+    border-radius: 35px;
+    transition: all .3s ease;
+    z-index: 999
 }
-#yukari i{
-    color:#fff;
-    font-size:3rem;
+
+#yukari i {
+    color: #fff;
+    font-size: 3rem;
 }
-#yukari:hover{
-    background-color:#222222;
-} 
+
+#yukari:hover {
+    background-color: #222222;
+}
+
 // hakkında css
 @import 'hakkında';
 
